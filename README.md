@@ -9,5 +9,6 @@
 ## You can add your OpenAI API key in the followning files:
 ### Dochat/django_chatgpt/chatclone/ingest.py
 ### Dochat/django_chatgpt/chatclone/func.py
-
+## To Run
+``` python3 manage.py runserver```
 ## Built using Django framework, Langchain, ChromaDB and OPENAI API
