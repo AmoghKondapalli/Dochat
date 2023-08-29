@@ -1,5 +1,6 @@
 # Dochat
 # A full solution for extracting valuable information from large documents using the power of LLMs.
+### Has a complelte backend with login and register, and each user get their own private database, need an OpenAI API key in order to deploy and run, example running in the following screenshots
 # Fully Working
 ![login](https://github.com/AmoghKondapalli/Dochat/assets/90903421/a54b0dcb-b343-4aa0-99c0-59e43f5f75d9)
 ![register](https://github.com/AmoghKondapalli/Dochat/assets/90903421/f83b6c01-6954-4b9c-9026-462d276eb029)
