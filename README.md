@@ -10,6 +10,7 @@
 ### Dochat/django_chatgpt/chatclone/ingest.py
 ### Dochat/django_chatgpt/chatclone/func.py
 ## To Run
-```pip3 install -r requirements.txt```\n
+```pip3 install -r requirements.txt```
+
 ``` python3 manage.py runserver```
 ## Built using Django framework, Langchain, ChromaDB and OPENAI API
