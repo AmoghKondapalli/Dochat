@@ -6,7 +6,7 @@
 ![upload_files](https://github.com/AmoghKondapalli/Dochat/assets/90903421/24ea3af0-9797-4ed6-86a9-3ef06ab38d73)
 ![working](https://github.com/AmoghKondapalli/Dochat/assets/90903421/ff62659d-b284-481a-afe5-666bb10d16cf)
 ## You can add your OpenAI API key in the followning files:
-Dochat/django_chatgpt/chatclone/ingest.py
-Dochat/django_chatgpt/chatclone/func.py
+### Dochat/django_chatgpt/chatclone/ingest.py
+### Dochat/django_chatgpt/chatclone/func.py
 
 ## Built using Django framework, Langchain, ChromaDB and OPENAI API
