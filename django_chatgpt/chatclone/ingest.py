@@ -30,7 +30,7 @@ from langchain.vectorstores import Chroma
 from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.docstore.document import Document
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "YOUR API HERE"
 
 chunk_size = 1000
 chunk_overlap = 200
@@ -116,7 +116,7 @@ def process_documents(SOURCE_DIRECTORY, ignored_files: List[str] = []) -> List[D
     documents = load_documents(SOURCE_DIRECTORY, ignored_files)
     if not documents:
         print("No new documents to load")
-        exit(0)
+        return None
     print(f"Loaded {len(documents)} new documents from {SOURCE_DIRECTORY}")
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=chunk_size, chunk_overlap=chunk_overlap)
     texts = text_splitter.split_documents(documents)
@@ -139,9 +139,6 @@ def main_ingest(PERSIST_DIRECTORY, SOURCE_DIRECTORY):
     db.add_documents(texts)
     db.persist()
     db = None
-
-def delete_db():
-    os.system("rm -r db/")
 
 
 if __name__ == "__main__":

@@ -17,9 +17,9 @@ def chatbot(request):
 		if mymodel:
 			file_url = mymodel.file.path
 			folder_path = os.path.dirname(file_url)
-		main_ingest(folder_path+'/db',folder_path)
+		main_ingest(folder_path+'_db',folder_path)
 		message = request.POST.get('message')
-		response = proc(message,folder_path+'/db',folder_path)
+		response = proc(message,folder_path+'_db',folder_path)
 		# message = request.POST.get('message')
 		# response = '# elo there matey'
 		chat = Chat(user = request.user, message = message, response = response, created_at = timezone.now)
@@ -98,4 +98,5 @@ def delete(request):
 		folder_path = os.path.dirname(file_url)
 	print(folder_path)
 	os.system(f"rm -r {folder_path}/")
+	os.system(f"rm -r {folder_path}_db/")
 	return redirect('upload')

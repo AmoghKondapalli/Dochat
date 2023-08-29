@@ -9,7 +9,7 @@ from langchain.chat_models import ChatOpenAI
 
 import os
 def load_llm(PERSIST_DIRECTORY, SOURCE_DIRECTORY):
-        os.environ["OPENAI_API_KEY"] = "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"
+        os.environ["OPENAI_API_KEY"] = "YOUR API HERE"
 
         embeddings = OpenAIEmbeddings()
         
@@ -53,4 +53,4 @@ def proc(query,PERSIST_DIRECTORY, SOURCE_DIRECTORY):
         answer,source = res['answer'] , res['source_documents']
         stranswer = str(answer)
         strsource = str(source)
-        return[stranswer]
+        return stranswer
